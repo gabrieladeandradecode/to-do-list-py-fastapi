@@ -17,7 +17,7 @@ def get_db():
     finally:
         db.close()
 
-# endpoints
+# Endpoints
 @app.post('/tasks/', response_model=schemas.TaskResponse)
 def create_task(task: schemas.TaskCreate, db: Session = Depends(get_db)):
     db_task = models.Task(**task.model_dump())
@@ -30,3 +30,5 @@ def create_task(task: schemas.TaskCreate, db: Session = Depends(get_db)):
 def read_tasks(db: Session = Depends(get_db)):
     tasks = db.query(models.Task).all()
     return tasks
+
+

@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-# this file ensures the data structure (their data types).
+# This file ensures the Data Structure.
 
 class TaskBase(BaseModel):
     title: str
