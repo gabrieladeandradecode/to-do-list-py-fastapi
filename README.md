@@ -23,12 +23,14 @@ pip install -r requirements.txt
 Donwload PostgreSQL here --> https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 After donwloading, add in your system's PATH environment the path to the PostgreSQL bin folder.
 Note: Save your login credentials (user and password) for later.
+Remember not to use specials characters as #, $, @.. use only letters and numbers.
 
 To ensure it's working, run this in the VS Code terminal: 
 psql --version
 
 4) Create a .env file and add your login credentials in the following format:
-DATABASE_URL = postgresql://user:password@localhost/tasks
+DATABASE_URL = postgresql://postgres:password@localhost/tasks
+Ensure to alter the part "password" to your login credential.
 
 5) To connect to the database, run this in the VS Code terminal: 
 psql -U postgres
@@ -49,4 +51,6 @@ Now to close the postgres terminal, run:
 
 8) To run the API, do: 
 uvicorn main:app --reload
+
+It will show an URL. Click on it.
 
