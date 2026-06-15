@@ -52,5 +52,8 @@ Now to close the postgres terminal, run:
 8) To run the API, do: 
 uvicorn main:app --reload
 
-It will show an URL. Click on it.
+It will show an URL. Click on it. Then, there are different URLs you can use:
+/tasks/
+/docs
 
+Enjoy the app!
