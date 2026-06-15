@@ -44,7 +44,7 @@ CREATE DATABASE tasks;
 Result : CREATE DATABASE
 
 Note: if you want to change your login credentials, here's the command:
-ALTER USER user WITH PASSWORD 'password';
+ALTER USER postgres WITH PASSWORD 'password';
 
 Now to close the postgres terminal, run:
 \q
